@@ -1,0 +1,31 @@
+
+ <h1> SIGN UP</h1>
+   {{ error }}<br>
+<form method="post" action="{% url 'signup' %}">
+    {% csrf_token %}
+    <hr>
+    <br>
+   <h2 >USERNAME :</h2> <br>
+    <input type="text" name="username" />
+    <br>
+    <h2>PASSWORD :</h2><br>
+    <input type="password" name="password1" />
+    <br>
+    <h2>CONFIRM PASSWORD :</h2>
+    <input type="password" name="password2" />
+    <br>
+    <br>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign up</button>
+    <br>
+    <hr>
+</form>
+
+<br>
+    <br>
+    <br>
+
+<footer class="text-muted">
+  <div class="container text-center">
+    &copy; ADITYA VEER {% now " Y"%}
+  </div>
+</footer>
